@@ -1,0 +1,922 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "marco.rossi@gmail.com",
+      "password": "123456",
+      "username": "mrossi",
+      "firstName": "Marco",
+      "lastName": "Rossi",
+      "phone": "+39 333 1234567",
+      "fiscalCode": "RSSMRC85M01F205X",
+      "birthDate": "1985-08-01",
+      "address": {
+        "street": "Via Roma 10",
+        "city": "Milano",
+        "postalCode": "20121",
+        "province": "MI",
+        "country": "Italia"
+      },
+      "theme": "light",
+      "avatarUrl": "",
+      "customerCode": "CLI0001",
+      "createdAt": "2024-01-15T09:20:00Z",
+      "lastLogin": "2026-04-15T08:12:00Z"
+    },
+    {
+      "id": "2",
+      "email": "giulia.bianchi@gmail.com",
+      "password": "123456",
+      "username": "gbianchi",
+      "firstName": "Giulia",
+      "lastName": "Bianchi",
+      "phone": "+39 347 7654321",
+      "fiscalCode": "BNCGLI90A41F205Y",
+      "birthDate": "1990-01-01",
+      "address": {
+        "street": "Corso Como 25",
+        "city": "Milano",
+        "postalCode": "20124",
+        "province": "MI",
+        "country": "Italia"
+      },
+      "theme": "dark",
+      "avatarUrl": "",
+      "customerCode": "CLI0002",
+      "createdAt": "2024-03-20T10:10:00Z",
+      "lastLogin": "2026-04-14T18:40:00Z"
+    },
+    {
+      "id": "3",
+      "email": "andrea.verdi@gmail.com",
+      "password": "123456",
+      "username": "averdi",
+      "firstName": "Andrea",
+      "lastName": "Verdi",
+      "phone": "+39 320 5566778",
+      "fiscalCode": "VRDNDR94D12F839K",
+      "birthDate": "1994-04-12",
+      "address": {
+        "street": "Via Garibaldi 58",
+        "city": "Torino",
+        "postalCode": "10122",
+        "province": "TO",
+        "country": "Italia"
+      },
+      "theme": "light",
+      "avatarUrl": "",
+      "customerCode": "CLI0003",
+      "createdAt": "2024-06-08T15:25:00Z",
+      "lastLogin": "2026-04-13T12:05:00Z"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "1",
+      "userId": 1,
+      "name": "Conto Principale",
+      "type": "checking",
+      "iban": "IT60X0542811101000000123456",
+      "abi": "05428",
+      "cab": "11101",
+      "accountNumber": "000000123456",
+      "balance": 3108.42,
+      "availableBalance": 3108.42,
+      "currency": "EUR",
+      "status": "active",
+      "openedAt": "2024-01-20T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "name": "Conto Risparmio",
+      "type": "savings",
+      "iban": "IT18Y0542811101000000987654",
+      "abi": "05428",
+      "cab": "11101",
+      "accountNumber": "000000987654",
+      "balance": 12450,
+      "availableBalance": 12450,
+      "currency": "EUR",
+      "status": "active",
+      "openedAt": "2024-02-11T09:30:00Z"
+    },
+    {
+      "id": "3",
+      "userId": 2,
+      "name": "Conto Personale",
+      "type": "checking",
+      "iban": "IT37P0300203280000401234567",
+      "abi": "03002",
+      "cab": "03280",
+      "accountNumber": "0401234567",
+      "balance": 5820.77,
+      "availableBalance": 5720.77,
+      "currency": "EUR",
+      "status": "active",
+      "openedAt": "2024-03-22T14:00:00Z"
+    },
+    {
+      "id": "4",
+      "userId": 3,
+      "name": "Conto Smart",
+      "type": "checking",
+      "iban": "IT79Q0503410110000000456789",
+      "abi": "05034",
+      "cab": "10110",
+      "accountNumber": "000000456789",
+      "balance": 1890.34,
+      "availableBalance": 1840.34,
+      "currency": "EUR",
+      "status": "active",
+      "openedAt": "2024-06-15T11:45:00Z"
+    }
+  ],
+  "account_transactions": [
+    {
+      "id": "1",
+      "accountId": 1,
+      "type": "credit",
+      "category": "stipendio",
+      "amount": 2450,
+      "description": "Accredito stipendio Aprile",
+      "counterparty": "Tech Solutions S.r.l.",
+      "date": "2026-04-01T08:00:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "2",
+      "accountId": 1,
+      "type": "debit",
+      "category": "spesa",
+      "amount": 84.35,
+      "description": "Supermercato Esselunga",
+      "counterparty": "Esselunga Milano",
+      "date": "2026-04-02T17:42:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "3",
+      "accountId": 1,
+      "type": "debit",
+      "category": "trasporti",
+      "amount": 35,
+      "description": "Abbonamento ATM",
+      "counterparty": "ATM Milano",
+      "date": "2026-04-03T09:05:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "4",
+      "accountId": 1,
+      "type": "debit",
+      "category": "utenze",
+      "amount": 96.8,
+      "description": "Addebito bolletta energia",
+      "counterparty": "Enel Energia",
+      "date": "2026-04-05T07:20:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "5",
+      "accountId": 1,
+      "type": "debit",
+      "category": "ristorazione",
+      "amount": 28.5,
+      "description": "Pranzo business",
+      "counterparty": "Bistrot Centrale",
+      "date": "2026-04-06T13:14:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "6",
+      "accountId": 1,
+      "type": "debit",
+      "category": "bonifico",
+      "amount": 250,
+      "description": "Bonifico affitto",
+      "counterparty": "Sara Neri",
+      "date": "2026-04-07T08:45:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "7",
+      "accountId": 1,
+      "type": "debit",
+      "category": "shopping",
+      "amount": 56.2,
+      "description": "Acquisto Zara Home",
+      "counterparty": "Zara Home",
+      "date": "2026-04-08T18:33:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "8",
+      "accountId": 1,
+      "type": "credit",
+      "category": "rimborso",
+      "amount": 42,
+      "description": "Rimborso ordine annullato",
+      "counterparty": "Amazon EU",
+      "date": "2026-04-09T10:28:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "9",
+      "accountId": 1,
+      "type": "debit",
+      "category": "salute",
+      "amount": 72,
+      "description": "Visita specialistica",
+      "counterparty": "Centro Medico San Carlo",
+      "date": "2026-04-10T16:10:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "10",
+      "accountId": 1,
+      "type": "debit",
+      "category": "pagamento",
+      "amount": 118.7,
+      "description": "Pagamento bollettino gas",
+      "counterparty": "Italgas",
+      "date": "2026-04-11T11:30:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "11",
+      "accountId": 1,
+      "type": "debit",
+      "category": "tempo_libero",
+      "amount": 24.99,
+      "description": "Abbonamento Spotify",
+      "counterparty": "Spotify",
+      "date": "2026-04-12T06:00:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "12",
+      "accountId": 1,
+      "type": "debit",
+      "category": "casa",
+      "amount": 45,
+      "description": "Idraulico",
+      "counterparty": "Pronto Intervento Casa",
+      "date": "2026-04-13T14:20:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "13",
+      "accountId": 1,
+      "type": "debit",
+      "category": "trasporti",
+      "amount": 22.4,
+      "description": "Rifornimento carburante",
+      "counterparty": "Q8 Station",
+      "date": "2026-04-14T19:40:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "14",
+      "accountId": 1,
+      "type": "debit",
+      "category": "shopping",
+      "amount": 149.99,
+      "description": "Acquisto cuffie wireless",
+      "counterparty": "MediaWorld",
+      "date": "2026-03-25T15:10:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "15",
+      "accountId": 1,
+      "type": "credit",
+      "category": "stipendio",
+      "amount": 2450,
+      "description": "Accredito stipendio Marzo",
+      "counterparty": "Tech Solutions S.r.l.",
+      "date": "2026-03-01T08:00:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "16",
+      "accountId": 2,
+      "type": "credit",
+      "category": "versamento",
+      "amount": 5000,
+      "description": "Versamento su conto risparmio",
+      "counterparty": "Giroconto",
+      "date": "2026-02-15T10:00:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "17",
+      "accountId": 2,
+      "type": "credit",
+      "category": "interessi",
+      "amount": 15,
+      "description": "Interessi trimestrali",
+      "counterparty": "Banca Home Banking",
+      "date": "2026-04-01T08:30:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "18",
+      "accountId": 2,
+      "type": "debit",
+      "category": "giroconto",
+      "amount": 250,
+      "description": "Giroconto verso conto principale",
+      "counterparty": "Conto Principale",
+      "date": "2026-04-10T12:15:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "19",
+      "accountId": 3,
+      "type": "credit",
+      "category": "stipendio",
+      "amount": 3100,
+      "description": "Accredito stipendio Aprile",
+      "counterparty": "Studio Creativo S.p.A.",
+      "date": "2026-04-01T08:00:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "20",
+      "accountId": 3,
+      "type": "debit",
+      "category": "affitto",
+      "amount": 920,
+      "description": "Affitto mensile",
+      "counterparty": "Immobiliare Centro",
+      "date": "2026-04-03T09:10:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "21",
+      "accountId": 3,
+      "type": "debit",
+      "category": "spesa",
+      "amount": 65.4,
+      "description": "Supermercato Carrefour",
+      "counterparty": "Carrefour",
+      "date": "2026-04-05T18:10:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "22",
+      "accountId": 3,
+      "type": "debit",
+      "category": "viaggi",
+      "amount": 120,
+      "description": "Treno Milano-Roma",
+      "counterparty": "Trenitalia",
+      "date": "2026-04-08T07:55:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "23",
+      "accountId": 3,
+      "type": "credit",
+      "category": "rimborso",
+      "amount": 25,
+      "description": "Cashback acquisti",
+      "counterparty": "Programma Cashback",
+      "date": "2026-04-11T12:40:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "24",
+      "accountId": 4,
+      "type": "credit",
+      "category": "stipendio",
+      "amount": 1800,
+      "description": "Accredito stipendio Aprile",
+      "counterparty": "Digital Farm S.r.l.",
+      "date": "2026-04-01T08:00:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "25",
+      "accountId": 4,
+      "type": "debit",
+      "category": "utenze",
+      "amount": 54.3,
+      "description": "Internet casa",
+      "counterparty": "TIM",
+      "date": "2026-04-04T09:35:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "26",
+      "accountId": 4,
+      "type": "debit",
+      "category": "ristorazione",
+      "amount": 18.5,
+      "description": "Cena takeaway",
+      "counterparty": "Pizzeria Bella Napoli",
+      "date": "2026-04-06T20:22:00Z",
+      "status": "booked"
+    },
+    {
+      "accountId": "1",
+      "type": "debit",
+      "category": "bonifico",
+      "amount": 100,
+      "description": "Cena ristorante",
+      "counterparty": "Mario Rossi",
+      "date": "2026-04-15T17:51:58.420",
+      "status": "booked",
+      "id": "lp5bL1IcQRE"
+    },
+    {
+      "accountId": 1,
+      "type": "debit",
+      "category": "bonifico",
+      "amount": 5,
+      "description": "Regalo Marta",
+      "counterparty": "Maria Peppa",
+      "date": "2026-04-15T18:07:39.027",
+      "status": "booked",
+      "id": "658H58ls2jg"
+    },
+    {
+      "accountId": 1,
+      "type": "debit",
+      "category": "pagamento",
+      "amount": 35,
+      "description": "Bollettino Luce",
+      "counterparty": "Poste Italiane",
+      "date": "2026-04-15T18:21:11.176",
+      "status": "booked",
+      "id": "DOjXSLuB7S0"
+    }
+  ],
+  "cards": [
+    {
+      "id": "1",
+      "userId": 1,
+      "accountId": 1,
+      "name": "Carta di Credito Oro",
+      "type": "credit",
+      "circuit": "Visa",
+      "maskedNumber": "**** **** **** 1234",
+      "holderName": "Marco Rossi",
+      "expiry": "12/27",
+      "status": "active",
+      "limit": 3000,
+      "availableLimit": 2218.16,
+      "color": "gold"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "accountId": 1,
+      "name": "Carta Debito Principale",
+      "type": "debit",
+      "circuit": "Mastercard",
+      "maskedNumber": "**** **** **** 7788",
+      "holderName": "Marco Rossi",
+      "expiry": "09/28",
+      "status": "active",
+      "limit": 0,
+      "availableLimit": 0,
+      "color": "blue"
+    },
+    {
+      "id": "3",
+      "userId": 2,
+      "accountId": 3,
+      "name": "Carta Premium",
+      "type": "credit",
+      "circuit": "Mastercard",
+      "maskedNumber": "**** **** **** 5678",
+      "holderName": "Giulia Bianchi",
+      "expiry": "08/26",
+      "status": "active",
+      "limit": 5000,
+      "availableLimit": 4385.2,
+      "color": "black"
+    },
+    {
+      "id": "4",
+      "userId": 3,
+      "accountId": 4,
+      "name": "Carta Smart",
+      "type": "debit",
+      "circuit": "Visa",
+      "maskedNumber": "**** **** **** 2468",
+      "holderName": "Andrea Verdi",
+      "expiry": "11/27",
+      "status": "active",
+      "limit": 0,
+      "availableLimit": 0,
+      "color": "green"
+    }
+  ],
+  "card_transactions": [
+    {
+      "id": "1",
+      "cardId": 1,
+      "type": "debit",
+      "category": "shopping_online",
+      "amount": 59.99,
+      "description": "Amazon Marketplace",
+      "merchant": "Amazon",
+      "date": "2026-04-02T11:02:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "2",
+      "cardId": 1,
+      "type": "debit",
+      "category": "abbonamenti",
+      "amount": 12.99,
+      "description": "Netflix",
+      "merchant": "Netflix",
+      "date": "2026-04-03T06:20:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "3",
+      "cardId": 1,
+      "type": "debit",
+      "category": "ristorazione",
+      "amount": 34.5,
+      "description": "Cena ristorante",
+      "merchant": "Trattoria Milano",
+      "date": "2026-04-05T21:10:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "4",
+      "cardId": 1,
+      "type": "debit",
+      "category": "viaggi",
+      "amount": 189,
+      "description": "Prenotazione hotel",
+      "merchant": "Booking.com",
+      "date": "2026-04-07T14:05:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "5",
+      "cardId": 1,
+      "type": "debit",
+      "category": "shopping",
+      "amount": 77.8,
+      "description": "Scarpe running",
+      "merchant": "Nike Store",
+      "date": "2026-04-09T17:25:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "6",
+      "cardId": 1,
+      "type": "debit",
+      "category": "carburante",
+      "amount": 45.2,
+      "description": "Rifornimento carburante",
+      "merchant": "Eni Station",
+      "date": "2026-04-12T08:30:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "7",
+      "cardId": 1,
+      "type": "debit",
+      "category": "tempo_libero",
+      "amount": 28.36,
+      "description": "Biglietti cinema",
+      "merchant": "UCI Cinemas",
+      "date": "2026-04-13T20:10:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "8",
+      "cardId": 2,
+      "type": "debit",
+      "category": "bancomat",
+      "amount": 100,
+      "description": "Prelievo ATM",
+      "merchant": "ATM UniCredit Milano",
+      "date": "2026-04-04T18:00:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "9",
+      "cardId": 2,
+      "type": "debit",
+      "category": "spesa",
+      "amount": 43.7,
+      "description": "Spesa minimarket",
+      "merchant": "Carrefour Express",
+      "date": "2026-04-10T19:12:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "10",
+      "cardId": 3,
+      "type": "debit",
+      "category": "abbonamenti",
+      "amount": 9.99,
+      "description": "Apple Music",
+      "merchant": "Apple",
+      "date": "2026-04-01T07:00:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "11",
+      "cardId": 3,
+      "type": "debit",
+      "category": "shopping_online",
+      "amount": 149,
+      "description": "Acquisto accessori ufficio",
+      "merchant": "IKEA Online",
+      "date": "2026-04-06T13:10:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "12",
+      "cardId": 3,
+      "type": "debit",
+      "category": "ristorazione",
+      "amount": 36.5,
+      "description": "Cena sushi",
+      "merchant": "Sushi Garden",
+      "date": "2026-04-11T20:48:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "13",
+      "cardId": 4,
+      "type": "debit",
+      "category": "spesa",
+      "amount": 39.9,
+      "description": "Spesa supermercato",
+      "merchant": "Coop",
+      "date": "2026-04-03T18:22:00Z",
+      "status": "booked"
+    },
+    {
+      "id": "14",
+      "cardId": 4,
+      "type": "debit",
+      "category": "gaming",
+      "amount": 19.99,
+      "description": "Abbonamento gaming",
+      "merchant": "PlayStation",
+      "date": "2026-04-08T22:10:00Z",
+      "status": "booked"
+    }
+  ],
+  "transfers": [
+    {
+      "id": "1",
+      "accountId": 1,
+      "direction": "outgoing",
+      "beneficiaryName": "Sara Neri",
+      "beneficiaryIban": "IT45A0306909606100000123456",
+      "amount": 250,
+      "description": "Affitto aprile",
+      "executionDate": "2026-04-07",
+      "status": "completed",
+      "createdAt": "2026-04-07T08:40:00Z"
+    },
+    {
+      "id": "2",
+      "accountId": 1,
+      "direction": "outgoing",
+      "beneficiaryName": "Luca Verdi",
+      "beneficiaryIban": "IT72N0501803200000001239876",
+      "amount": 80,
+      "description": "Regalo compleanno",
+      "executionDate": "2026-03-18",
+      "status": "completed",
+      "createdAt": "2026-03-18T16:05:00Z"
+    },
+    {
+      "id": "3",
+      "accountId": 1,
+      "direction": "incoming",
+      "beneficiaryName": "Elena Fontana",
+      "beneficiaryIban": "IT11C0760103200000012345678",
+      "amount": 120,
+      "description": "Quota cena weekend",
+      "executionDate": "2026-04-09",
+      "status": "completed",
+      "createdAt": "2026-04-09T10:20:00Z"
+    },
+    {
+      "id": "4",
+      "accountId": 3,
+      "direction": "outgoing",
+      "beneficiaryName": "Immobiliare Centro",
+      "beneficiaryIban": "IT89V0200801000003004455667",
+      "amount": 920,
+      "description": "Affitto aprile",
+      "executionDate": "2026-04-03",
+      "status": "completed",
+      "createdAt": "2026-04-03T09:05:00Z"
+    },
+    {
+      "id": "5",
+      "accountId": 4,
+      "direction": "outgoing",
+      "beneficiaryName": "Marco Bassi",
+      "beneficiaryIban": "IT17R0303201601000000101010",
+      "amount": 60,
+      "description": "Cena condivisa",
+      "executionDate": "2026-04-10",
+      "status": "completed",
+      "createdAt": "2026-04-10T22:01:00Z"
+    },
+    {
+      "accountId": "1",
+      "direction": "outgoing",
+      "beneficiaryName": "Mario Rossi",
+      "beneficiaryIban": "IT60X0542811101000000123456",
+      "amount": 100,
+      "description": "Cena ristorante",
+      "executionDate": "2026-04-15",
+      "status": "completed",
+      "createdAt": "2026-04-15T17:51:58.420",
+      "id": "PrJtwFoRCbw"
+    },
+    {
+      "accountId": 1,
+      "direction": "outgoing",
+      "beneficiaryName": "Maria Peppa",
+      "beneficiaryIban": "IT60X0542811101000000123457",
+      "amount": 5,
+      "description": "Regalo Marta",
+      "executionDate": "2026-04-15",
+      "status": "completed",
+      "createdAt": "2026-04-15T18:07:39.027",
+      "transferType": "instant",
+      "id": "ARixdqWKAkA"
+    }
+  ],
+  "payments": [
+    {
+      "id": "1",
+      "accountId": 1,
+      "type": "bollettino",
+      "provider": "Poste Italiane",
+      "amount": 118.7,
+      "description": "Bollettino gas",
+      "code": "896700000000123456",
+      "date": "2026-04-11T11:30:00Z",
+      "status": "completed"
+    },
+    {
+      "id": "2",
+      "accountId": 1,
+      "type": "pagopa",
+      "provider": "Comune di Milano",
+      "amount": 42,
+      "description": "Tassa rifiuti",
+      "code": "302000000000987654",
+      "date": "2026-03-28T10:15:00Z",
+      "status": "completed"
+    },
+    {
+      "id": "3",
+      "accountId": 3,
+      "type": "f24",
+      "provider": "Agenzia delle Entrate",
+      "amount": 214,
+      "description": "Pagamento F24 semplificato",
+      "code": "F24-2026-00021",
+      "date": "2026-04-02T09:50:00Z",
+      "status": "completed"
+    },
+    {
+      "id": "4",
+      "accountId": 4,
+      "type": "bollettino",
+      "provider": "Acquedotto Torino",
+      "amount": 31.5,
+      "description": "Bolletta acqua",
+      "code": "123456789012345678",
+      "date": "2026-04-06T12:18:00Z",
+      "status": "completed"
+    },
+    {
+      "accountId": 1,
+      "type": "bollettino",
+      "provider": "Poste Italiane",
+      "amount": 35,
+      "description": "Bollettino Luce",
+      "code": "123456789012",
+      "date": "2026-04-15T18:21:11.176",
+      "status": "completed",
+      "id": "fFNyqAgEN80"
+    }
+  ],
+  "beneficiaries": [
+    {
+      "id": "1",
+      "userId": 1,
+      "name": "Sara Neri",
+      "iban": "IT45A0306909606100000123456",
+      "bankName": "Intesa Sanpaolo",
+      "favorite": true,
+      "createdAt": "2025-11-12T09:00:00Z"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "name": "Luca Verdi",
+      "iban": "IT72N0501803200000001239876",
+      "bankName": "BPER Banca",
+      "favorite": true,
+      "createdAt": "2025-12-03T15:20:00Z"
+    },
+    {
+      "id": "3",
+      "userId": 1,
+      "name": "Elena Fontana",
+      "iban": "IT11C0760103200000012345678",
+      "bankName": "Poste Italiane",
+      "favorite": false,
+      "createdAt": "2026-01-10T11:10:00Z"
+    },
+    {
+      "id": "4",
+      "userId": 2,
+      "name": "Immobiliare Centro",
+      "iban": "IT89V0200801000003004455667",
+      "bankName": "UniCredit",
+      "favorite": true,
+      "createdAt": "2025-10-08T08:45:00Z"
+    },
+    {
+      "id": "5",
+      "userId": 3,
+      "name": "Marco Bassi",
+      "iban": "IT17R0303201601000000101010",
+      "bankName": "Credito Emiliano",
+      "favorite": true,
+      "createdAt": "2026-02-22T10:35:00Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "userId": 1,
+      "title": "Benvenuto nel nuovo Home Banking",
+      "content": "Abbiamo aggiornato la piattaforma per offrirti un’esperienza più semplice e veloce nella gestione dei tuoi conti e delle tue carte.",
+      "date": "2026-04-01T09:00:00Z",
+      "read": true,
+      "type": "info"
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "title": "Bonifico eseguito correttamente",
+      "content": "Il bonifico di 250,00 € verso Sara Neri è stato eseguito con successo.",
+      "date": "2026-04-07T08:50:00Z",
+      "read": false,
+      "type": "transaction"
+    },
+    {
+      "id": "3",
+      "userId": 1,
+      "title": "Pagamento bollettino completato",
+      "content": "Il pagamento del bollettino gas di 118,70 € è stato registrato correttamente.",
+      "date": "2026-04-11T11:35:00Z",
+      "read": false,
+      "type": "payment"
+    },
+    {
+      "id": "4",
+      "userId": 2,
+      "title": "Promemoria sicurezza",
+      "content": "Ti consigliamo di aggiornare periodicamente la password e di non condividerla con nessuno.",
+      "date": "2026-04-10T08:00:00Z",
+      "read": false,
+      "type": "security"
+    },
+    {
+      "id": "5",
+      "userId": 3,
+      "title": "Nuova funzionalità disponibile",
+      "content": "Da oggi puoi gestire i pagamenti ricorrenti direttamente dalla tua area riservata.",
+      "date": "2026-04-09T12:00:00Z",
+      "read": true,
+      "type": "info"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "1",
+      "userId": 1,
+      "token": "mock-token-user-1",
+      "createdAt": "2026-04-15T08:12:00Z",
+      "expiresAt": "2026-04-15T20:12:00Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
